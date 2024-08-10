@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Css Div Image Hover</title>  
+        
+        <style>
+        .container{
+            width:100%;
+            padding: 50px;
+            margin:50 px auto;  
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            }
+            .h2{
+                text-align: center;
+            }
+            .box{  
+            width:300px;    
+            margin:0 10px;
+            padding: 100 px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1); 
+            } 
+           .box img{  
+            display: box;    
+            width:100%;   
+            border-radius: 5px;
+            }
+            .box:hover{
+                transform: scale(1.3);
+                z-index: 2;
+            }
+            .cart {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+        /* Add your CSS styles here */
+        /* This is just an example, customize it according to your needs */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        .navbar__logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .navbar__menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .navbar__item {
+            margin: 0 10px;
+        }
+        
+        .navbar__links {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .navbar__links:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" class="navbar__logo">
+                <img src="1111.png" width="150px" height="150px" alt="Logo">
+            </a>
+            <div class="navbar__toggle" id="agri-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">ABOUT</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="loggin.html" class="navbar__links">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="feedback.html" class="navbar__links">FEEDBACK</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="buy.html" class="navbar__links">CART</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+        <div class="container">    
+        <div class="box">     
+       <a href="quantity.html"><img src="rice.jpg"></a>
+
+        <h2>Rice</h2>
+
+            <p>Price: $0.25</p>
+            <a href="rice.php">
+                <button class="add-to-cart" onclick="addToCart('rice', 0.25)">Details</button>
+            </a>
+        </div>
+        <div class="box">    
+        <a href="quantity.html"><img src="corn.jpg"></a> 
+        <h2>Corn</h2>
+            <p>Price: $0.50</p>
+            <a href="corn.php">
+         <button class="add-to-cart" onclick="addToCart('corn', 0.50)">Details</button>
+         </a>
+        </div>    
+        <div class="box">   
+        <a href="quantity.html"><img src="moong.jpg"> </a>  
+        <h2>Moong</h2>
+            <p>Price: $0.75</p>
+            <a href="moong.php">
+         <button class="add-to-cart" onclick="addToCart('moong', 0.75)">Details</button> </a>
+        </div>   
+        <div class="box">    
+           <a href="quantity.html"> <img src="3.jpg"> </a>
+            <h2>Jowar</h2>
+            <p>Price: $1.25</p>
+            <a href="jowar.php">
+             <button class="add-to-cart" onclick="addToCart('jowar', 1.25)">Details</button>  </a>
+            </div>    
+            <div class="box">    
+               <a href="quantity.html"> <img src="o.jpg"> </a>
+                 <h2>Soybean</h2>
+            <p>Price: $1.50</p>
+            <a href="soybean.php">
+                 <button class="add-to-cart" onclick="addToCart('soybean', 1.50)">Details</button> </a>
+                </div>    
+        </div> 
+        </body>
+</html>
+<html>
+<body>
+    <div class="container">    
+    <div class="box">     
+   <a href="quantity.html"> <img src="cashew.jpg"></a>
+    <h2>Peanut</h2>
+            <p>Price: $5.00</p>
+            <a href="peanut.php">
+     <button class="add-to-cart" onclick="addToCart('peanut', 5)">Details</button></a>
+    </div>
+    <div class="box">    
+   <a href="quantity.html"> <img src="c.jpg"> </a>   
+    <h2>Cashew</h2>
+            <p>Price: $2.50</p>
+            <a href="cashew.php">
+     <button class="add-to-cart" onclick="addToCart('Cashew', 2.50)">Details</button></a>
+    </div>    
+    <div class="box">   
+    <a href="quantity.html"><img src="wheat.jpg"></a>   
+    <h2>Wheat</h2>
+            <p>Price: $1.25</p>
+            <a href="wheat.php">
+     <button class="add-to-cart" onclick="addToCart('wheat', 1.25)">Details</button> </a> 
+    </div>   
+    <div class="box">    
+       <a href="quantity.html"> <img src="coffee.jpg"></a>   
+        <h2>Coffee</h2>
+            <p>Price: $2.50</p>
+            <a href="coffee.php">
+         <button class="add-to-cart" onclick="addToCart('coffee', 2.50)">Details</button> </a>
+        </div>    
+        <div class="box">    
+           <a href="quantity.html"> <img src="almonds.jpg"> </a> 
+            <h2>Almonds</h2>
+            <p>Price: $4.50</p>
+            <a href="almonds.php">
+             <button class="add-to-cart" onclick="addToCart('almonds', 4.50)">Details</button>  </a>
+            </div>    
+    </div> 
+</body>
+
+
+</html>

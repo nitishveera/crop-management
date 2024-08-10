@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="feedback.css">
+  <script type="text/javascript">
+    function feed()
+    {
+      alert("Your feedback have been submitted")
+    }
+  </script>
+    <style>
+      /* Add your CSS styles here */
+      /* This is just an example, customize it according to your needs */
+      .navbar {
+          background-color: #333;
+          overflow: hidden;
+      }
+      
+      .navbar__container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+      }
+      
+      .navbar__logo {
+          color: white;
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: bold;
+      }
+      
+      .navbar__menu {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+      }
+      
+      .navbar__item {
+          margin: 0 10px;
+      }
+      
+      .navbar__links {
+          color: white;
+          text-decoration: none;
+      }
+      
+      .navbar__links:hover {
+          text-decoration: underline;
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar__container">
+          <a href="/" class="navbar__logo">
+              <img src="1111.png" width="150px" height="150px" alt="Logo">
+          </a>
+          <div class="navbar__toggle" id="agri-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+              <li class="navbar__item">
+                  <a href="index.html" class="navbar__links">HOME</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="about.html" class="navbar__links">ABOUT</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="loggin.html" class="navbar__links">LOGIN</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="feedback.html" class="navbar__links">FEEDBACK</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="buy.html" class="navbar__links">CART</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="contact.html" class="navbar__links">CONTACT US</a>
+              </li>
+          </ul>
+      </div>
+  </nav> 
+  <div class="container">
+    <h2>Farmers Feedback Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="marketPrice">Market Price Feedback:</label>
+        <textarea id="marketPrice" name="marketPrice" rows="4" placeholder="Provide your feedback about market prices..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="usability">Usability Feedback:</label>
+        <textarea id="usability" name="usability" rows="4" placeholder="Provide your feedback about usability..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="issues">Issues Encountered:</label>
+        <textarea id="issues" name="issues" rows="4" placeholder="Describe any issues you encountered..."></textarea>
+      </div>
+      <input type="button" onclick="feed()" value="save"/>
+      
+    </form>
+  </div>
+</body>
+</html>

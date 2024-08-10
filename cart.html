@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+    <h1>YOUR PRODUCTS</h1>
+    <div class="products">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Price: $0.25</p>
+            <button class="add-to-cart" onclick="addToCart('Product 1', 10)">Add to Cart</button>
+       </div>
+        <div class="box">    
+        <img src="corn.jpg"> 
+        <label>Corn - Rs 149/Kg</label>   
+         <button class="add-to-cart" onclick="addToCart('corn', 149)">Add to Cart</button>
+        </div>    
+        <div class="box">   
+        <img src="moong.jpg">   
+        <label>Moong - Rs 140/Kg </label> 
+         <button class="add-to-cart" onclick="addToCart('moong', 140)">Add to Cart</button> 
+        </div>   
+        <div class="box">    
+            <img src="paddy.jpg"> 
+            <label>Paddy - Rs 25/Kg</label> 
+             <button class="add-to-cart" onclick="addToCart('paddy', 25)">Add to Cart</button>  
+            </div>    
+            <div class="box">    
+                <img src="o.jpg">  
+                <label>Jowar - Rs 32/Kg</label> 
+                 <button class="add-to-cart" onclick="addToCart('jowar', 32)">Add to Cart</button> 
+                </div>    
+        </div> 
+        </body>
+</html>
+<html>
+<body>
+    <div class="container">    
+    <div class="box">     
+    <img src="cashew.jpg">
+    <label>Cashew - Rs 820/Kg</label>
+     <button class="add-to-cart" onclick="addToCart('cashew', 820)">Add to Cart</button>
+    </div>
+    <div class="box">    
+    <img src="c.jpg">    
+    <label>Coffee - Rs 440/Kg</label>
+     <button class="add-to-cart" onclick="addToCart('Coffee', 4400)">Add to Cart</button>
+    </div>    
+    <div class="box">   
+    <img src="m.jpg">   
+    <label>Soybean - Rs 120/Kg</label>
+     <button class="add-to-cart" onclick="addToCart('soyabean', 120)">Add to Cart</button>  
+    </div>   
+    <div class="box">    
+        <img src="coffee.jpg">   
+        <label>Coffee Rs 185/Kg</label>
+         <button class="add-to-cart" onclick="addToCart('coffee', 185)">Add to Cart</button> 
+        </div>    
+        <div class="box">    
+            <img src="almonds.jpg">  
+            <label>Almond - Rs 600/Kg</label>
+             <button class="add-to-cart" onclick="addToCart('almond', 600)">Add to Cart</button>  
+            </div>    
+    </div> 
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
